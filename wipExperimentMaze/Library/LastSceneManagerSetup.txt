@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/mazeExperimentScene.unity
+- path: Assets/Scenes/wipExperimentMaze.unity
   isLoaded: 1
   isActive: 1
