@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\VRPN.cs" />
      <Compile Include="Assets\Scripts\VRPNClient.cs" />
      <Compile Include="Assets\Scripts\VRPNServer.cs" />
+     <Compile Include="Assets\Scripts\gateCollider.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\SampleAndroidManifest\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">

@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/wipExperimentMaze.unity
+    path: Assets/Scenes/wipExperimentMaze.unity
     guid: 4c434c367cb7efd488e0c9a553399fcb

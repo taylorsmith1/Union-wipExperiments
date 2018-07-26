@@ -34,22 +34,24 @@ public class AccelerometerInput4 : MonoBehaviour {
 		string path = Application.persistentDataPath + "/CW4Test_Data.txt";
 
 		// This text is always added, making the file longer over time if it is not deleted
-		string appendText = "\n" + DateTime.Now.ToString() + "\t" + 
-			Time.time + "\t" + 
+		string appendText = "\n" + DateTime.Now.ToString() + ";" + 
+			Time.time + ";" + 
 
-			Input.GetMouseButtonDown(0) + "\t" +
+			Input.GetMouseButton(0) + ";" +
 
-			Input.gyro.userAcceleration.x + "\t" + 
-			Input.gyro.userAcceleration.y + "\t" + 
-			Input.gyro.userAcceleration.z + "\t" + 
+			Input.gyro.userAcceleration.x + ";" + 
+			Input.gyro.userAcceleration.y + ";" + 
+			Input.gyro.userAcceleration.z + ";" + 
 
-			gameObject.transform.position.x + "\t" + 
-			gameObject.transform.position.y + "\t" + 
-			gameObject.transform.position.z + "\t" +
+			gameObject.transform.position.x + ";" + 
+			gameObject.transform.position.y + ";" + 
+			gameObject.transform.position.z + ";" +
 
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.x + "\t" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y + "\t" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.z;
+			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.x + ";" +
+			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y + ";" +
+			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.z + ";" +
+
+			gateCollider.isInGate;
 		
 		File.AppendAllText(path, appendText);
 
