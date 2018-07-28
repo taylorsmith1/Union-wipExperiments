@@ -51,7 +51,8 @@ public class AccelerometerInput4 : MonoBehaviour {
 			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y + ";" +
 			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.z + ";" +
 
-			gateCollider.isInGate;
+			gateCollider.isInGate + ";" + 
+			gateCollider.isTouchingWall;
 		
 		File.AppendAllText(path, appendText);
 
@@ -107,8 +108,10 @@ public class AccelerometerInput4 : MonoBehaviour {
 
         //Multiply intended speed (called velocity) by delta time to get a distance, then multiply that distamce
         //    by the unit vector in the look direction to get displacement.
-		transform.Translate (xVal * velocity * Time.fixedDeltaTime, 0, zVal * velocity * Time.fixedDeltaTime); 
 
+		//ADJUSTING THE SPEED
+		transform.Translate (xVal * velocity * Time.fixedDeltaTime, 0, zVal * velocity * Time.fixedDeltaTime); 
+		//transform.Translate (xVal * velocity * Time.fixedDeltaTime, 0, zVal * 3 * Time.fixedDeltaTime); 
 	}
 
     #region NetworkingCode
