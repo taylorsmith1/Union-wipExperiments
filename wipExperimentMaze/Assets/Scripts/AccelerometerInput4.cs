@@ -47,9 +47,9 @@ public class AccelerometerInput4 : MonoBehaviour {
 			gameObject.transform.position.y + ";" + 
 			gameObject.transform.position.z + ";" +
 
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.x + ";" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y + ";" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.z + ";" +
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.x + ";" +
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.y + ";" +
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.z + ";" +
 
 			gateCollider.isInGate + ";" + 
 			gateCollider.isTouchingWall;
@@ -68,7 +68,7 @@ public class AccelerometerInput4 : MonoBehaviour {
 	void move ()
 	{
         //Get the yaw of the subject to allow for movement in the look direction
-		yaw = InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y;
+		yaw = UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.y;
         //convert that value into radians because math uses radians
 		rad = yaw * Mathf.Deg2Rad;
         //map that value onto the unit circle to faciliate movement in the look direction

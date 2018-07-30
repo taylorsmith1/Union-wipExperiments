@@ -87,9 +87,9 @@ public class MyNetworkServer : MonoBehaviour {
 			gameObject.transform.position.y + "\t" + 
 			gameObject.transform.position.z + "\t" +
 
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.x + "\t" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.y + "\t" +
-			InputTracking.GetLocalRotation (VRNode.Head).eulerAngles.z;
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.x + "\t" +
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.y + "\t" +
+			UnityEngine.XR.InputTracking.GetLocalRotation (UnityEngine.XR.XRNode.Head).eulerAngles.z;
 
 		File.AppendAllText(path, appendText);
 	}
