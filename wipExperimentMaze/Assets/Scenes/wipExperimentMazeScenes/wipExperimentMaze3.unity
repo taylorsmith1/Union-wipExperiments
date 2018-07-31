@@ -956,7 +956,6 @@ MonoBehaviour:
   wallRightEnd: {fileID: 1001210254898266, guid: 94fb7a846d88174419466ca0410aa6c8,
     type: 2}
   player: {fileID: 0}
-  SceneSelected: 0
 --- !u!4 &560154874
 Transform:
   m_ObjectHideFlags: 0
@@ -2014,7 +2013,7 @@ Transform:
   m_GameObject: {fileID: 1904391076}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -54.9, y: 147.57674, z: -59.8}
-  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 1052318004}
   m_RootOrder: 0

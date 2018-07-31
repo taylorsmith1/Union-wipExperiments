@@ -10,7 +10,7 @@ public class gateCollider : MonoBehaviour {
 
 	void Update()
 	{
-		Debug.Log (isTouchingWall);
+		//Debug.Log (isTouchingWall);
 	}
 
 	private void OnTriggerEnter(Collider other)

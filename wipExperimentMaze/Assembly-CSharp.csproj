@@ -51,9 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MazeGen.cs" />
      <Compile Include="Assets\Scripts\AccelerometerInput4.cs" />
+     <Compile Include="Assets\Scripts\blackoutTimer.cs" />
      <Compile Include="Assets\Scripts\gateCollider.cs" />
+     <Compile Include="Assets\Scripts\MazeGen.cs" />
      <Compile Include="Assets\Scripts\MyNetworkServer.cs" />
      <Compile Include="Assets\Scripts\TDServer.cs" />
      <Compile Include="Assets\Scripts\VRPN.cs" />
